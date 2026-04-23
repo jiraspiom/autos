@@ -74,12 +74,12 @@ export const Dashboard = () => {
       {/* Main Content Areas */}
       <div className="lg:col-span-2 space-y-5">
         <div className="card bg-white border border-[#d1d9e0] rounded-[4px] overflow-hidden flex flex-col">
-          <div className="card-header px-4 py-3 border-b border-[#d1d9e0] font-bold text-[14px] flex justify-between items-center bg-white">
+          <div className="card-header px-6 py-3 border-b border-[#d1d9e0] font-bold text-[14px] flex justify-between items-center bg-white">
             <span>Lista de Autos Recentes</span>
             <Link to="/autos/posse" className="font-normal text-[12px] text-brand-blue hover:underline">Ver todos</Link>
           </div>
           <div className="overflow-hidden">
-            <div className="grid grid-cols-[100px_1fr_100px] px-4 py-2.5 bg-[#f8fafc] border-b border-[#f0f0f0] font-bold text-[11px] uppercase text-[#7f8c8d]">
+            <div className="grid grid-cols-[100px_1fr_100px] px-6 py-2.5 bg-[#f8fafc] border-b border-[#f0f0f0] font-bold text-[11px] uppercase text-[#7f8c8d]">
               <div>NÚMERO</div>
               <div>ASSUNTO / CLASSE</div>
               <div>SIGILO</div>
@@ -88,7 +88,7 @@ export const Dashboard = () => {
               <Link 
                 key={auto.id}
                 to={`/auto/${auto.id}`}
-                className="grid grid-cols-[100px_1fr_100px] px-4 py-3 border-b border-[#f0f0f0] last:border-b-0 text-[13px] hover:bg-slate-50 transition-colors"
+                className="grid grid-cols-[100px_1fr_100px] px-6 py-3 border-b border-[#f0f0f0] last:border-b-0 text-[13px] hover:bg-slate-50 transition-colors"
               >
                 <div className="font-bold text-[#2c3e50]">{auto.numero}</div>
                 <div className="flex items-center gap-2 truncate">
@@ -116,10 +116,10 @@ export const Dashboard = () => {
 
         {/* Action Batch Card */}
         <div className="card bg-white border border-[#d1d9e0] rounded-[4px] overflow-hidden">
-          <div className="card-header px-4 py-3 border-b border-[#d1d9e0] font-bold text-[14px] bg-white">
+          <div className="card-header px-6 py-3 border-b border-[#d1d9e0] font-bold text-[14px] bg-white">
              Pendências de Assinatura (Lote Disponível)
           </div>
-          <div className="flex p-3 gap-4 items-center bg-[#fffdf0] border-b border-[#ffeeba]">
+          <div className="flex px-6 py-3 gap-4 items-center bg-[#fffdf0] border-b border-[#ffeeba]">
             <input type="checkbox" className="rounded-[2px]" />
             <span className="text-[13px] text-[#2c3e50]">
               <strong>Selecionar todos (8 documentos)</strong>
@@ -128,18 +128,18 @@ export const Dashboard = () => {
               Assinar em Lote
             </button>
           </div>
-          <div className="table-row grid grid-cols-[80px_1fr_100px] px-4 py-2.5 border-b border-[#f0f0f0] text-[13px]">
+          <div className="table-row grid grid-cols-[80px_1fr_100px] px-6 py-2.5 border-b border-[#f0f0f0] text-[13px]">
             <div className="flex items-center gap-2"><input type="checkbox" className="rounded-[2px]" /> 10:24</div>
             <div className="font-medium">Minuta de Denúncia - Autos 202400123456</div>
-            <div className="text-right">
-              <span className="tag-pendente bg-[#f8d7da] text-[#721c24] text-[10px] px-1.5 py-0.5 rounded font-bold uppercase">REVISÃO</span>
+            <div className="text-right text-slate-400">
+               <span className="tag-pendente bg-[#f8d7da] text-[#721c24] text-[10px] px-1.5 py-0.5 rounded font-bold uppercase">REVISÃO</span>
             </div>
           </div>
-          <div className="table-row grid grid-cols-[80px_1fr_100px] px-4 py-2.5 border-b border-[#f0f0f0] last:border-b-0 text-[13px]">
+          <div className="table-row grid grid-cols-[80px_1fr_100px] px-6 py-2.5 border-b border-[#f0f0f0] last:border-b-0 text-[13px]">
             <div className="flex items-center gap-2"><input type="checkbox" className="rounded-[2px]" /> 09:15</div>
             <div className="font-medium">Parecer Final - Autos 202300987654</div>
-            <div className="text-right">
-              <span className="tag-pendente bg-[#f8d7da] text-[#721c24] text-[10px] px-1.5 py-0.5 rounded font-bold uppercase">URGENTE</span>
+            <div className="text-right text-slate-400">
+               <span className="tag-pendente bg-[#f8d7da] text-[#721c24] text-[10px] px-1.5 py-0.5 rounded font-bold uppercase">URGENTE</span>
             </div>
           </div>
         </div>
@@ -148,7 +148,7 @@ export const Dashboard = () => {
       {/* Right Column */}
       <div className="space-y-5">
         <div className="card bg-white border border-[#d1d9e0] rounded-[4px] overflow-hidden">
-          <div className="card-header px-4 py-3 border-b border-[#d1d9e0] font-bold text-[14px] bg-white">
+          <div className="card-header px-6 py-3 border-b border-[#d1d9e0] font-bold text-[14px] bg-white">
             Produtividade Semanal
           </div>
           <div className="h-[180px] p-4 flex items-end justify-around gap-2">

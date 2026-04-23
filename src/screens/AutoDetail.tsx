@@ -251,7 +251,7 @@ export const AutoDetail = () => {
                   <h4 className="text-[11px] font-bold text-[#7f8c8d] uppercase tracking-wider">Tarefas da Equipe</h4>
                   <div className="space-y-3 flex-1 overflow-y-auto">
                      {MOCK_TAREFAS.map((t: any) => (
-                       <div key={t.id} className="flex items-center gap-3 p-3 bg-slate-50 rounded-[4px] group">
+                       <div key={t.id} className="flex items-center gap-3 px-5 py-3 bg-slate-50 rounded-[4px] group">
                           <input type="checkbox" checked={t.concluida} readOnly className="rounded-[2px] border-slate-200 text-brand-blue focus:ring-0" />
                           <div className="flex-1 min-w-0">
                              <p className={cn("text-[13px] font-medium truncate", t.concluida ? "text-slate-400 line-through" : "text-[#2c3e50]")}>{t.texto}</p>
