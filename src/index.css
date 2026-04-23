@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  --font-sans: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  --color-brand-blue-light: #0056b3;
+  --color-brand-blue: #004a80;
+  --color-brand-blue-dark: #003366;
+  --color-brand-green: #2ecc71;
+  --color-brand-green-light: #4ade80;
+
+  --radius-3xl: 4px;
+  --radius-2xl: 4px;
+  --radius-xl: 4px;
+  --radius-lg: 4px;
+  --radius-md: 4px;
+  --radius-sm: 2px;
+}
+
+@layer base {
+  body {
+    @apply antialiased text-slate-700 bg-[#f4f7f9] font-sans;
+  }
+}
+
+/* Custom scrollbar for a cleaner look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-200;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-300;
+}
+
+.atena-card {
+  @apply bg-white border border-[#d1d9e0] rounded-sm;
+}
